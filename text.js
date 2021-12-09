@@ -1,7 +1,7 @@
 // alert("works");
     var firstWord;
     var finalWord;
-const construcs = [
+const constructors = [
   "Align",
   "Build",
   "Calibrat",
@@ -324,7 +324,7 @@ const deconstructing = [
     //alert(conDecon);
   if (conDecon >= 4){
     var randNum = Math.floor(Math.random() * 101);
-    firstWord =construcs[randNum] + "ing";
+    firstWord =constructor[randNum] + "ing";
   }
   else if (conDecon < 4 ){
     var randNum1 = Math.floor(Math.random() * 100);
