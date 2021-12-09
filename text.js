@@ -1,5 +1,6 @@
 // alert("works");
     var firstWord;
+    var finalWord;
 const construcs = [
   "Align",
   "Build",
@@ -103,6 +104,7 @@ const construcs = [
   "Energiz",
   "Stuff"
   ];
+
 const deconstructing = [
   "Deallocat",
   "Trash",
@@ -205,17 +207,133 @@ const deconstructing = [
   "Arrest",
   "Bury"
   ];
-    var randomNum = Math.floor(Math.random() * 101);
-    alert(randomNum);
+
+  const nouns= [
+    "content",
+    "your mom",
+    "the shmoo",
+    "API",
+    "the BJT man",
+    "aesthetics",
+    "backstory",
+    "tactics",
+    "bugs",
+    "sauce",
+  
+    "warp drive",
+    "data",
+    "the funk",
+    "AI",
+    "crystals",
+    "spaghetti",
+    "fluxgate",
+    "electrons",
+    "loud noises",
+    "wires",
+  
+    "bytecode",
+    "the truth",
+    "magic",
+    "hot lava",
+    "bits",
+    "Brad",
+    "Teensy",
+    "sensors",
+    "photons",
+    "signal",
+  
+    "the planet",
+    "password",
+    "chips",
+    "circuits",
+    "privacy",
+    "synergy",
+    "widgets",
+    "love",
+    "packets",
+    "reality",
+  
+    "lasers",
+    "protocols",
+    "voltage",
+    "registers",
+    "puns",
+    "dogecoins",
+    "kittens",
+    "magic smoke",
+    "plot device",
+    "the core",
+  
+    "dank memes",
+    "subroutines",
+    "radiation",
+    "steam",
+    "trousers",
+    "beer",
+    "protocol",
+    "one-liners",
+    "the Gibson",
+    "software",
+  
+    "a fat one",
+    "holograms",
+    "magnets",
+    "inductors",
+    "resistors",
+    "capacitors",
+    "viewers",
+    "subscribers",
+    "sausage",
+    "my wife",
+  
+    "drama",
+    "the future",
+    "vectors",
+    "the clowns",
+    "a Palm Pilot",
+    "5G implant",
+    "monkeys",
+    "breadboard",
+    "Patreon",
+    "money",
+  
+    "the Internet",
+    "fluids",
+    "the impostor",
+    "beats",
+    "dopamine",
+    "fedora",
+    "neural net",
+    "comments",
+    "ports",
+    "you. Yes you",
+  
+    "mixtape",
+    "[REDACTED]",
+    "hot tub",
+    "paperwork",
+    "Nerf",
+    "cyber-doobie",
+    "the 1%",
+    "the Matrix",
+    "variables",
+    "IP address"
+  ]
+    //alert(randNum);
     var conDecon = Math.floor(Math.random() * 6);
-    alert(conDecon);
+    //alert(conDecon);
   if (conDecon >= 4){
-    firstWord =construcs[randomNum] + "ing";
+    var randNum = Math.floor(Math.random() * 101);
+    firstWord =construcs[randNum] + "ing";
   }
   else if (conDecon < 4 ){
-    firstWord = deconstructing[randNum] + "ing";
-    alert(deconstructing[6] + "ing");
+    var randNum1 = Math.floor(Math.random() * 100);
+    firstWord = deconstructing[randNum1] + "ing";
+  //  alert(deconstructing[6] + "ing");
   }
-  
-alert(firstWord);
-  //alert(deconstructing[randomNum] + "ing");
+finalWord =(firstWord +" "+ nouns[Math.floor(Math.random() * 109)] + "!");
+// alert(finalWord);
+function displayPhrase(){
+document.getElementById("output").innerHTML=finalWord;
+}
+  //alert(deconstructing[randNum] + "ing");
